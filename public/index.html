@@ -1,0 +1,76 @@
+<!--
+    This is the user 
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="top-half-container">
+            
+            <div class="enter-food-container">
+                <p>Enter Type of Food!</p>
+            </div>
+            <div class = "text-input-container">
+                <div class = "text-input-box">
+                    <form action="" method="get" class="form">
+                        <input type="text" id="input-box" placeholder="Ex. Boba, Chinese, Mexican">
+                        <div class="btn-icon">
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="radio-box">
+                <div class="price-radio-button-container">
+                    <input type="radio" id="male" name="price" value="1"" checked="checked"">
+                    <label for="$">$</label>
+                    <input type="radio" id="female" name="price" value="2">
+                    <label for="$$">$$</label>
+                    <input type="radio" id="other" name="price" value="3">
+                    <label for="$$$">$$$</label>
+                </div>
+                <div class="radius-radio-button-container">
+                    <input type="radio" id="male" name="radius" value="5000"" checked="checked"">
+                    <label for="3">3 Miles</label>
+                    <input type="radio" id="female" name="radius" value="16000">
+                    <label for="10">10 Miles</label>
+                    <input type="radio" id="other" name="radius" value="32000">
+                    <label for="20">20 Miles</label>
+                </div>
+            </div>
+            <div class="sort-options-container">
+                <div class="sort-options">
+                    <form action = "" method = "POST" class = "sort-form">
+                        <label>Sort By</label>
+                        <select id = "sort-select">
+                            <option value= "best_match">Best Match</option>
+                            <option value= "rating">Rating</option> 
+                            <option value= "distance">Distance</option> 
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class = "search-button-container">
+            <input type = "button" id = "submit-button" value = "Search">
+        </div>
+
+        <div class="result-container">
+            <div id="node">
+            </div>
+            <ul>
+                <li class="list-results"></li>
+                <li class="list-results"></li>
+                <li class="list-results"></li>
+                <li class="list-results"></li>
+                <li class="list-results"></li>
+            </ul>
+        </div>
+
+        <script type="module" src="front_end.js"></script>
+    </body>
+</html>
