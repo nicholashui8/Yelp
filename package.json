@@ -20,7 +20,7 @@
   "author": "Nicholas Hui",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "request": "^2.88.2",
     "yelp-fusion": "^3.0.0"
   }
